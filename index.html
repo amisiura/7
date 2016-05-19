@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	  <meta charset="UTF-8">
+	  <title>MENU</title>  
+	  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+		
+		
+			<form action="#canvas">
+				<h1>Please fill the information below:</h1>
+			<div class="block">
+				<label for="fn"> First name<span>*</span>
+				<input type="text" id="fn" placeholder="First name" autofocus  required>
+				</label>
+			</div>
+
+			<div class="block">
+				<label for="ln">Last name<span>*</span>
+				<input type="text" id="ln" placeholder="Last name" tabindex="2" required>
+				</label>
+			</div>
+			
+			<div class="block">
+				<div class="cbx">
+					<label for="db">Date of birth<span>*</span><br>
+					<input type="date" id="db" tabindex="3" required>
+					</label>
+				</div>
+				
+				<div class="gender">
+					<label> Choose gender <span>*</span><br>
+						<input type="radio" name="sex"  class="radio" id="r1"  tabindex="4">Male	
+						<input type="radio" name="sex" class="radio" id="r2"  tabindex="5">Female
+					</label>
+				</div>
+			</div>
+
+			<div class="block">
+				<label for="pass">Password<span>*</span>
+				<input type="password" id="pass" placeholder="Password" tabindex="6" required>
+				<span class="hint">Please enter 6 symbols or more</span>
+				</label> <br>
+			</div>
+			
+			<div class="block">
+				<label for="rpass">Repeat password<span>*</span>
+				<input type="password" id="rpass" placeholder="Repeat password" tabindex="7" required>
+				<span class="hint">Please enter 6 symbols or more</span>
+				</label>
+			</div> 
+			
+			<div class="block">
+				<label for="phone">Enter your telephone<span>*</span>
+				<input type="number" id="phone" placeholder="Enter your telephone" tabindex="8" required>
+				<span class="hint">Please enter XXX-XXX-XX-XX</span>
+				</label> <br>
+			</div>
+
+			<div class="block">
+				<label for="url">Enter your website URL
+				<input type="url" id="url" placeholder="Enter your website URL" tabindex="9">
+				</label> <br>
+			</div>
+
+			<div class="block">
+			<label>Please enter your card information</label><br>	
+			<label>Card number</label>
+			<label>CVV <br>
+				<input type="text"  class="cn" tabindex="10" placeholder="----" maxlength="4" pattern="[0-9]{0,4}" required>
+				<input type="text"  class="cn" tabindex="11" placeholder="----" maxlength="4" pattern="[0-9]{0,4}" required>
+				<input type="text"  class="cn" tabindex="12" placeholder="----" maxlength="4" pattern="[0-9]{0,4}" required>
+				<input type="text"  class="cn" tabindex="13" placeholder="----" maxlength="4" pattern="[0-9]{0,4}" required>
+			
+				<input type="text" pattern="[0-9]{0,3}" id="cvvid" placeholder="---" tabindex="14" maxlength="3" required>
+			</label>
+			</div>
+			<div class="block">
+				<label> Choose how many brothers or sisters you have
+					<input type="range" min="0" max="5" value="0" step="1">	
+				</label> <br>
+				<label > Choose your favourite color
+					<input type="color" name="color">
+				</label> <br>
+			</div>
+			
+			<div class="block">
+				<textarea name="comments"  cols="30" rows="10" maxlength="200" placeholder
+="Comments"></textarea>
+			</div>
+
+
+			
+
+			<button type="submit" name="send_payment">SUBMIT</button>
+			
+			</form>
+	
+		
+	
+	</body>
+
+
+</html>
