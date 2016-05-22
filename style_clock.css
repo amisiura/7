@@ -1,0 +1,29 @@
+*{
+	box-sizing: border-box;
+}
+
+
+@keyframes rotation{
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.sec{
+	animation:rotation 1s infinite linear;
+ 	transform-origin: 0% 100%;
+ 	position: absolute;
+}
+
+.min{
+	animation:rotation 6s infinite linear;
+ 	transform-origin: 0% 100%;
+ 	position: absolute;
+}
+
+.hour{
+	animation:rotation 36s infinite linear;
+ 	transform-origin: 0% 0%;
+ 	position: absolute;
+}
